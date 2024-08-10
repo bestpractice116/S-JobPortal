@@ -119,7 +119,7 @@ const UserEducationForm = ({ initialData, userId }: UserEducationFormProps) => {
       {/* Display the Company Name if not Editing */}
       {!isEditing && (
         <div className=''>
-          {initialData.education?.map((item) => (
+          {initialData?.education?.map((item) => (
             <div className='flex flex-col mt-5' key={item.id}>
               <div className='flex justify-between'>
                 <div>

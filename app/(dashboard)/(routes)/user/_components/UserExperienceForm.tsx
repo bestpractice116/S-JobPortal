@@ -124,7 +124,7 @@ const UserExperienceForm = ({
       {/* Display the Company Name if not Editing */}
       {!isEditing && (
         <div className=''>
-          {initialData.jobExperience?.map((item) => (
+          {initialData?.jobExperience?.map((item) => (
             <div className='flex flex-col mt-5' key={item.id}>
               <div className='flex justify-between'>
                 <div>

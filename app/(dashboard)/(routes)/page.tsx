@@ -90,7 +90,7 @@ const DashboardHomePage = async () => {
         <h1 className='md:text-xl text-sm flex flex-wrap font-medium text-gray-800 tracking-wide'>
           Welcome{" "}
           <span className='text-[#0AAB7C] font-semibold'>
-            {profile?.fullName ? ", " + profile.fullName : user?.fullName}
+            {profile?.fullName ? ", " + profile.fullName : ", " + user?.fullName}
           </span>
         </h1>
         <p>
