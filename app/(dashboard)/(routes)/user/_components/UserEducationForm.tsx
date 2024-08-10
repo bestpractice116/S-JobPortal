@@ -70,7 +70,6 @@ const UserEducationForm = ({ initialData, userId }: UserEducationFormProps) => {
   const { isSubmitting, isValid } = form.formState;
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
-    console.log("Submitted Values:", values);
     try {
       const response = await axios.post(
         `/api/users/${userId}/educations`,
@@ -100,7 +99,6 @@ const UserEducationForm = ({ initialData, userId }: UserEducationFormProps) => {
   };
 
   const toggleEiditing = () => setIsEditing((current) => !current);
-  console.log(initialData.education);
 
   return (
     <div className='border bg-neutral-100 rounded-md p-4'>
@@ -327,7 +325,6 @@ const UserEducationForm = ({ initialData, userId }: UserEducationFormProps) => {
                           disabled={isSubmitting}
                           onCheckedChange={(value) => {
                             field.onChange(value);
-                            console.log(value);
                           }}
                         />
                         <label htmlFor='currentlyStudying' className='ml-2 text-neutral-500'>
