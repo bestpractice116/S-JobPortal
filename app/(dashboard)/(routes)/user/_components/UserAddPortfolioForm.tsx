@@ -151,7 +151,7 @@ const UserAddPortfolioForm = ({
         </div>
 
         {initialData?.portfolio?.map((portfolio) => (
-          <div className=''>
+          <div className='' key={portfolio.id}>
             <div className='w-56 h-40 rounded-lg flex items-center justify-center bg-[#0AAB7C]/10'>
               <div key={portfolio.id} className='w-full h-40 flex gap-5'>
                 <div className='w-full h-full rounded-md relative'>
