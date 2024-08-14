@@ -24,6 +24,11 @@ export const ApplyModel = ({
 }: ApplyModelComponentProps) => {
   const [isMounted, setIsMounted] = useState(false);
 
+  // Actove Resume Fetch
+  const activeResume = userProfile?.resumes.find(
+    (resume) => resume.id === userProfile?.activeResumeId
+  );
+
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -89,10 +94,39 @@ export const ApplyModel = ({
         >
           Cancel
         </Button>
-        <Button variant={"myPrimary"} disabled={loading} onClick={onConfirm} type='submit'>
+        {/* disables if there is no Active Resume */}
+        <Button
+          variant={"myPrimary"}
+          disabled={loading || !activeResume || !userProfile?.fullName || !userProfile.contact || !userProfile.email}
+          onClick={onConfirm}
+          type='submit'
+        >
           Continue
         </Button>
       </div>
+      {!activeResume && (
+        <div className='mt-2 text-end text-xs text-muted-foreground'>
+          You don&apos;t have any Active Resume. You can&apos;t apply without a resume.
+        </div>
+      )}
+
+      {!userProfile?.fullName && (
+        <div className='mt-2 text-end text-xs text-muted-foreground'>
+          Your Full Name is missing. Please update your profile to continue.
+        </div>
+      )}
+
+      {!userProfile?.contact && (
+        <div className='mt-2 text-end text-xs text-muted-foreground'>
+          Your Contact is missing. Please update your profile to continue.
+        </div>
+      )}
+      
+      {!userProfile?.email && (
+        <div className='mt-2 text-end text-xs text-muted-foreground'>
+          Your Email is missing. Please update your profile to continue.
+        </div>
+      )}
     </Model>
   );
 };

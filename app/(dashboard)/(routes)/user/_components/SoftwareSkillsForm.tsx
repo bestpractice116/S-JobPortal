@@ -79,14 +79,30 @@ const SoftwareSkillsForm = ({
       setIsPrompting(true);
       user_Software_Skills;
 
-      await getGenerativeAIResponse(user_Software_Skills(prompt)).then(
-        (data) => {
-          if (Array.isArray(JSON.parse(data))) {
-            setUserSkills((prevTags) => [...prevTags, ...JSON.parse(data)]);
-          }
-          setIsPrompting(false);
-        }
-      );
+      // Assuming user_Software_Skills is defined elsewhere
+    const response = await getGenerativeAIResponse(user_Software_Skills(prompt));
+
+    console.log(response); // Debugging step: Check the response format
+
+    let jsonResponse = response.trim(); // Remove any leading/trailing whitespace
+
+    // If the response contains a JSON prefix like "json", remove it
+    if (jsonResponse.startsWith('json')) {
+      jsonResponse = jsonResponse.slice(4).trim(); // Remove the "json" prefix
+    }
+
+    try {
+      const parsedData = JSON.parse(jsonResponse);
+
+      if (Array.isArray(parsedData)) {
+        setUserSkills((prevTags) => [...prevTags, ...parsedData]);
+      }
+    } catch (jsonError) {
+      console.log("Failed to parse JSON:", jsonError);
+      toast.error(`Failed to parse JSON: ${jsonError}`);
+    }
+
+    setIsPrompting(false);
     } catch (error) {
       console.log(error);
       toast.error(`Failed to generate the prompt...: ${error}`);

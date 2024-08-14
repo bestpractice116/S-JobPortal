@@ -179,22 +179,20 @@ const UserAddResumesForm = ({
                     variant={"ghost"}
                     className={cn(
                       "flex items-center justify-center",
-                      initialData.activeResumeId === item.id
-                        ? "text-emerald-500"
-                        : "text-red-500"
+                      initialData?.activeResumeId === item.id
+                        ? "text-emerald-500 cursor-not-allowed hover:text-emerald-500"
+                        : "text-emerald-500"
                     )}
                     onClick={()=> setActiveResumeId(item.id)}
                   >
                     <p className="text-xs md:text-sm">
-                      {initialData.activeResumeId === item.id
+                      {initialData?.activeResumeId === item.id
                         ? "Live"
                         : "Activate"}
                     </p>
 
-                    {initialData.activeResumeId === item.id ? (
+                    {initialData?.activeResumeId === item.id && (
                       <ShieldCheck className='md:h-4 h-3 md:w-4 w-3 ml-2' />
-                    ) : (
-                      <ShieldX className='md:h-4 h-3 md:w-4 w-3 ml-2' />
                     )}
                   </Button>
                 )}

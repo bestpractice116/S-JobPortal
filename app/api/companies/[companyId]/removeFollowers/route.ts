@@ -37,7 +37,6 @@ export const PATCH = async (
       const updatedCompany = await db.company.update({
         where: {
           id: companyId,
-          userId,
         },
         data: {
           followers: {
