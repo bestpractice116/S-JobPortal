@@ -17,7 +17,7 @@ interface HomeCompaniesContainerProps {
 export const CompanyListItemCard = ({ data }: { data: Company }) => {
   const router = useRouter();
   return (
-    <div className='mt-6 w-full flex md:flex-row flex-col gap-5'>
+    <div className='mt-1 w-full flex md:flex-row flex-col gap-5'>
       {/* <Card
         className='flex items-center gap-2 p-2 text-muted-foreground hover:text-[#0AAB7C] hover:border-[#0AAB7C] hover:shadow-md cursor-pointer md:text-sm text-xs'
         onClick={() => router.push(`/companies/${data.id}`)}
@@ -46,9 +46,14 @@ export const CompanyListItemCard = ({ data }: { data: Company }) => {
             <p className='text-stone-700 font-semibold text-base w-full truncate'>
               {data.name}
             </p>
-            <p className='text-xs text-[#0AAB7C] w-full truncate'>
-              {data?.industry}
-            </p>
+            {data.industry && (
+              <p className='text-xs text-[#0AAB7C] w-full truncate'>
+                {truncate(data?.industry, {
+                  length: 40,
+                  omission: "...",
+                })}
+              </p>
+            )}
           </div>
         </Box>
 
@@ -81,7 +86,7 @@ export const CompanyListItemCard = ({ data }: { data: Company }) => {
 const HomeCompaniesContainer = ({ companies }: HomeCompaniesContainerProps) => {
   return (
     <Box className='flex flex-wrap mt-5 w-full justify-center items-center px-5'>
-      <div className='w-full flex md:flex-row flex-col md:gap-2'>
+      <div className='w-full grid md:grid-cols-3 grid-cols-1 2xl:grid-cols-4 md:gap-2'>
         {companies.map((item) => (
           <CompanyListItemCard key={item.id} data={item} />
         ))}

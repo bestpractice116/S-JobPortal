@@ -135,7 +135,10 @@ const JobCardItem = ({ job, userId }: JobCardItemProps) => {
 
             <div className='w-full'>
               <p className='text-stone-700 font-semibold text-base w-full truncate'>
-                {job.title}
+                {truncate(job?.title, {
+                  length: 25,
+                  omission: "...",
+                })}
               </p>
               <Link
                 href={`/companies/${company?.id}`}
