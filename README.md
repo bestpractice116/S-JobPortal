@@ -4,6 +4,13 @@
 
 # 🌐 Full-Stack Online Job Portal
 
+![Next.js](https://img.shields.io/badge/Next.js-Framework-informational?style=flat&logo=next.js&logoColor=white&color=0AAB7C)
+![React](https://img.shields.io/badge/React-Frontend-informational?style=flat&logo=react&logoColor=white&color=0AAB7C)
+![ShadcnUI](https://img.shields.io/badge/ShadcnUI-Design-informational?style=flat&logo=ui-design&logoColor=white&color=0AAB7C)
+![Clerk](https://img.shields.io/badge/Clerk-Authentication-informational?style=flat&logo=clerk&logoColor=white&color=0AAB7C)
+![Prisma](https://img.shields.io/badge/Prisma-ORM-informational?style=flat&logo=prisma&logoColor=white&color=0AAB7C)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-informational?style=flat&logo=mongodb&logoColor=white&color=0AAB7C)
+
 *👨‍💻 Developed by:* [Syed Muhammad Kaif Bukhari](https://smkbukhari.netlify.app/)
 *🏢 Internship Project at:* [Devsinz](https://www.linkedin.com/company/devsinz)
 
