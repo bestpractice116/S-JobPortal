@@ -2,9 +2,54 @@
     <img height="100" src="./bismillah.png">
 </p>
 
-# Developer Portfolio
+# 🌐 Full-Stack Online Job Portal
 
-### Are you struggling to create a professional portfolio website? Look no further! You can use the Developer Portfolio template and create your very own personalized portfolio today! My website is designed to be user-friendly and easily customizable, making it perfect for both developers and freelancers.
+*👨‍💻 Developed by:* [Syed Muhammad Kaif Bukhari](https://smkbukhari.netlify.app/)
+*🏢 Internship Project at:* [Devsinz](https://www.linkedin.com/company/devsinz)
+
+---
+
+## 🎉 Welcome to the Ultimate Job Portal Experience!
+
+This repository hosts a comprehensive *Full-Stack Online Job Portal* developed as part of my internship at *Devsinz*. It's built to revolutionize the job hunting and recruiting experience with a modern, user-friendly interface and powerful backend capabilities.
+
+---
+
+## 🛠 Built With Cutting-Edge Technologies
+
+- *⚛ Frontend:* [Next.js](https://nextjs.org/) & [ShadCN UI](https://ui.shadcn.com/) for a seamless and responsive user experience.
+- *🛢 Backend:* [Prisma](https://www.prisma.io/) ORM & [MongoDB](https://www.mongodb.com/) for robust and scalable data management.
+- *🔐 Authentication:* [Clerk](https://clerk.com/) for secure and easy user management with support for social logins.
+- *☁ Deployment:* [Vercel](https://vercel.com/) for fast, scalable, and reliable hosting.
+- *🤖 AI Integration:* Google Generative AI for smart job descriptions and company profiles.
+
+---
+
+## 🌟 Key Features
+
+### 🔍 Job Search & Application
+- *Advanced Filtering:* Find jobs by role, experience level, work schedule, and more.
+- *One-Click Applications:* Apply for jobs with a single click and get real-time status updates.
+
+### 🧑‍💼 Profile Management
+- *Update Basic Info:* Update User Basic Informations.
+- *Resume Management:* Upload and manage multiple resumes.
+- *Educations and Experiences Details Management:* Add and Delete Education and Experience Details.
+- *Application Tracking:* Keep track of your job applications and follow companies.
+
+### 🏢 Company Profiles
+- *Auto-Generated Profiles:* Dynamic company profiles with the latest job postings.
+- *Follow Companies:* Stay updated with your favorite companies’ latest job offerings.
+
+### 🛠 Admin Tools
+- *Rich Job Posting:* Create, manage, and publish jobs with rich text editing.
+- *AI-Assisted Keywords:* Automatically generate relevant keywords for job postings.
+
+---
+
+## 📈 What Makes This Project Unique?
+
+This isn’t just another job portal—it's a feature-rich platform that leverages AI, modern UI/UX design, and a powerful backend to deliver a superior user experience for both job seekers and recruiters.
 
 ---
 
@@ -12,139 +57,40 @@
 
 ![](./public/image/screen.png)
 
-## View live preview [here](https://smkbukhari.netlify.app/).
+## View live preview [here](https://vendect.vercel.app/).
+## Watch live Overview [here]("") 
 
 ---
 
-## Table of Contents :scroll:
+## 📂 Explore the Code
 
-- [Sections](#sections-bookmark)
-- [Demo](#demo-movie_camera)
-- [Installation](#installation-arrow_down)
-- [Getting Started](#getting-started-dart)
-- [Usage](#usage-joystick)
-- [Packages Used](#packages-used-package)
-
----
-
-# Sections :bookmark:
-
-- HERO SECTION
-- ABOUT ME
-- EXPERIENCE
-- SKILLS
-- PROJECTS
-- EDUCATION
-- BLOG
-- CONTACTS
-
----
-
-# Installation :arrow_down:
-
-### You will need to download Git and Node to run this project
-
-- [Git](https://git-scm.com/downloads)
-- [Node](https://nodejs.org/en/download/)
-
-#### Make sure you have the latest version of both Git and Node on your computer.
-
-```
-node --version
-git --version
-```
-
-## <br />
-
-# Getting Started :dart:
-
-### Fork and Clone the repo
-
-To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
-
-```
-git clone https://github.com/<YOUR GITHUB USERNAME>/developer-portfolio.git
-
-cd developer-portfolio
-```
-
-### Install packages from the root directory
+Delve into the codebase to discover how the features are implemented. From dynamic frontend components to intricate backend logic and AI integration, there's a wealth of knowledge to be explored.
 
 ```bash
+# Clone the repository
+git clone https://github.com/SMKBukhari/VenDect.git
+
+# Navigate to the project directory
+cd VenDect
+
+# Install dependencies
 npm install
-# or
-yarn install
-```
 
-Then, run the development server:
-
-```bash
+# Run the development server
 npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
----
-
-# Usage :joystick:
-
-Goto [emailjs.com](https://www.emailjs.com/) and create a new account for the mail sending. In free trial you will get 200 mail per month. After setup `emailjs` account, Please create a new `.env` file from `.env.example` file.
-
-Eg:
-
-```env
-NEXT_PUBLIC_EMAILJS_SERVICE_ID =
-NEXT_PUBLIC_EMAILJS_TEMPLATE_ID =
-NEXT_PUBLIC_EMAILJS_PUBLIC_KEY =
-NEXT_PUBLIC_GTM = # For site analytics
-NEXT_PUBLIC_APP_URL = "http://127.0.0.1:3000"
-NEXT_PUBLIC_RECAPTCHA_SECRET_KEY = # For captcha verification on contact form
-NEXT_PUBLIC_RECAPTCHA_SITE_KEY =
-```
-
-### Then, Customize data in the `utils/data` [folder](https://github.com/SMKBukhari/SMKBukhariPortfolio/tree/main/utils/data).
-
-Eg:
-
-```javascript
-export const personalData = {
-  name: "Syed Muhammad Kaif Bukhari",
-  profile: "/profile.png",
-  designation: "Full-Stack Software Developer",
-  description: "My name is Syed Muhammad Kaif Bukhari....",
-  email: "s.mkb2524@outlook.com",
-  phone: "+923259090028",
-  address: "Rawalpindi, Pakistan",
-  github: "https://github.com/SMKBukhari",
-  facebook: "",
-  linkedIn: "https://www.linkedin.com/in/smkbukhari/",
-  twitter: "",
-  stackOverflow: "https://stackoverflow.com/users/24885198/syed-muhammad-kaif-bukhari",
-  leetcode: "https://leetcode.com/u/MuhammadKaif5515/",
-  devUsername: "smkbukhari",
-  resume: "...",
-};
-```
-
-`devUsername` Used for fetching blog from `dev.to`.
-
----
-
----
 
 # Packages Used :package:
 
 | Used Package List  |
 | :----------------: |
-|        next        |
-|  @emailjs/browser  |
-|    lottie-react    |
-| react-fast-marquee |
-|    react-icons     |
+|      next.js       |
+|     shadcn/UI      |
+|       clerk        |
+|      prisma        |
+|      mongodb       |
+|   framer-motion    |
+|    lucide-icons    |
 |   react-toastify   |
-|        sass        |
 |    tailwindcss     |
 
 ---
