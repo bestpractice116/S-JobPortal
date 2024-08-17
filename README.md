@@ -65,7 +65,7 @@ This isn’t just another job portal—it's a feature-rich platform that leverag
 ![](./public/img/screen.png)
 
 ## View live preview [here](https://vendect.vercel.app/).
-## Watch live Overview [here]("") 
+## Watch live Overview [here](https://youtu.be/UR7WnoS-8SU)
 
 ---
 
