@@ -55,7 +55,7 @@ This isn’t just another job portal—it's a feature-rich platform that leverag
 
 # Demo :movie_camera:
 
-![](./public/image/screen.png)
+![](./public/img/screen.png)
 
 ## View live preview [here](https://vendect.vercel.app/).
 ## Watch live Overview [here]("") 
@@ -81,16 +81,54 @@ npm run dev
 
 # Packages Used :package:
 
-| Used Package List  |
-| :----------------: |
-|      next.js       |
-|     shadcn/UI      |
-|       clerk        |
-|      prisma        |
-|      mongodb       |
-|   framer-motion    |
-|    lucide-icons    |
-|   react-toastify   |
-|    tailwindcss     |
+|             Used Package List            |
+| :--------------------------------------: |
+|       next                               |
+|       shadcn/UI                          |
+|       @radix-ui/react-checkbox           |
+|       @radix-ui/react-dialog             |
+|       @radix-ui/react-dropdown-menu      |
+|       @radix-ui/react-hover-card         |
+|       @radix-ui/react-label              |
+|       @radix-ui/react-popover            |
+|       @radix-ui/react-select             |
+|       @radix-ui/react-separator          |
+|       @radix-ui/react-slot               |
+|       @radix-ui/react-tabs               |
+|       @tanstack/react-table              |
+|       class-variance-authority           |
+|       lodash                             |
+|       @types/lodash                      |
+|       nodemailer                         |
+|       @types/nodemailer                  |
+|       axios                              |
+|       clsx                               |
+|       cmdk                               |
+|       date-fns                           |
+|       firebase                           |
+|       @clerk/clerk-sdk-node              |
+|       @clerk/nextjs                      |
+|       @google/generative-ai              |
+|       @hookform/resolvers                |
+|       @prisma/client                     |
+|       prisma                             |
+|       query-string                       |
+|       mongodb                            |
+|       zod                                |
+|       react                              |
+|       react-day-picker                   |
+|       react-dom                          |
+|       react-hook-form                    |
+|       react-hot-toast                    |
+|       react-quill                        |
+|       recharts                           |
+|       framer-motion                      |
+|       handlebars                         |
+|       lucide-icons                       |
+|       react-toastify                     |
+|       tailwindcss                        |
+|       tailwind-merge                     |
+|       tailwind-scrollbar                 |
+|       tailwindcss-animate                |
 
 ---
